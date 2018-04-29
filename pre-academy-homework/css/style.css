@@ -9,8 +9,25 @@ html {
 
 }
 
+.navbar {
+  margin-bottom: 0px;
+}
 li {
     display: inline;
+    padding: 5px;
+    padding-right: 20px;
+    font-size: 20px;
+    align-content: center;
+}
+
+ .banner {
+  font-size: 25px;
+  align-content: center;
+  padding: 10px;
+  color: white;
+  margin-top: 15px;
+
+
 }
 
 .menu {
