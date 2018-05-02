@@ -1,0 +1,110 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+.navbar {
+  margin-bottom: 0px;
+
+}
+li {
+    display: inline;
+    padding: 5px;
+    padding-right: 0px;
+    font-size: 20px;
+    align-content: center;
+}
+
+
+
+ .banner {
+  font-size: 25px;
+  align-content: center;
+  padding: 10px;
+  color: white;
+  margin-top: 15px;
+
+
+}
+
+.menu {
+  background-color: black;
+}
+
+/*font styling for h1, h3, h2, h3 and h4*/
+h1 {
+  font-size: 10px;
+}
+
+h2 {
+  font-style: bold;
+}
+
+h3 {
+    font-family: "Indie Flower", cursive;
+    font-size: 15px;
+}
+
+h4 {
+    font-family: "Domine", bold;
+    font-size: 15px;
+}
+
+
+/*styling for contact section*/
+.contact {
+		padding: 10px;
+}
+
+/*styling for contact icons in contact section*/
+.fa {
+	padding-right: 10px;
+	color: black;
+}
+
+/*styles the images in the project section - rounded edges*/
+#img-responsive {
+  border-radius: 8px;
+}
+
+
+
+/*justify all text on the page*/
+.text {
+  text-align: justify;
+}
+
+/*footer styling*/
+.footer {
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 10px; 
+}
+
+
+/* Add an active class to highlight the current page */
+.active {
+    background: #4caf50;
+}
+
+
+
+@media (max-width: 500px) {
+.ninja {
+   display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
