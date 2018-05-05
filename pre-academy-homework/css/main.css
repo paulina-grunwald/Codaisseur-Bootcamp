@@ -1,10 +1,9 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
 
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
+}
 
 .navbar {
   margin-bottom: 0px;
@@ -19,6 +18,15 @@ li {
 }
 
 
+
+
+#sport, #bass, #reading {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 200px;
+    height: 200px;
+    border-radius: 40%;
+}
 
  .banner {
   font-size: 25px;
@@ -78,7 +86,7 @@ h4 {
 }
 
 
-.container {
+.container, .row {
   padding-top: 30px;
 
 }
