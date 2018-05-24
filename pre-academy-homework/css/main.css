@@ -3,31 +3,77 @@ body, html {
     height: 100%;
     width: 100%;
     font-family: 'Raleway', sans-serif;
+    font-family: "Mukta Malar", sans-serif;
+    font-family: "Titillium Web", sans-serif;
 
 }
 
-.navbar {
-  margin-bottom: 0px;
 
+/* navigation bar styling */
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background: transparent;
+    background-image: none;
+    border: 1px solid #333333;
+    border-radius: 4px;
 }
+
 li {
     display: inline;
     padding: 5px;
-    padding-right: 0px;
-    font-size: 20px;
-    align-content: center;
+}
+
+
+#main-nav {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    -webkit-transition: height 0.5s, line-height 0.5s; /* Safari */
+    transition: height 0.5s, line-height 0.5s;
+    color: black;
+  
+}
+
+#minimenu {
+
+    background: black;
+    overflow: hidden;
+    height: auto;
+    width: 100%; /* Full width */
+    vertical-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+
+}
+
+#minimenu a {
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
 }
 
 
 
-
+/* styles for the hobby section */
 #sport, #bass, #reading {
     margin-top: 5vh;
     margin-bottom: 5vh;
-    width: 350px;
-    height: 350px;
-    padding:5px;
+    width: 250px;
+    height: 250px;
+    padding:10px;
     align-items: center;
+    border-radius: 50%;
     
 }
 
@@ -93,7 +139,8 @@ h4 {
 }
 
 .container {
-  padding-top: 30px; 
+  margin-top: 3em;
+  padding-top: 5em; 
 }
 
 /*justify all text on the page*/
@@ -104,7 +151,7 @@ h4 {
   text-align: left;
 }
 
-/*footer styling*/
+/* Footer styling */
 .footer {
 	display: block;
 	text-align: center;
@@ -129,7 +176,7 @@ h4 {
 @media (max-width: 900px) {
 
   .banner {
-    font-size: 25px;
+    font-size: 10em;
   }
 }
 
