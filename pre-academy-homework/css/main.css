@@ -1,11 +1,19 @@
-
-body, html {
-    height: 100%;
-    width: 100%;
-    font-family: 'Raleway', sans-serif;
+body,
+html {
     font-family: "Mukta Malar", sans-serif;
     font-family: "Titillium Web", sans-serif;
 
+    margin-left: 10px;
+    background: white;
+    color: black;
+    height: 100%;
+    width: 100%;
+
+}
+
+/*font styling for h1, h3, h2, h3 and h4*/
+h1 {
+  font-size: 40px;
 }
 
 
@@ -63,7 +71,17 @@ li {
 
 }
 
+.container {
+  margin-top: 5em;
+  padding-left: 20px; 
+  padding-right: 20px;
+}
 
+#work {
+  max-width: 100%;
+  height: auto;
+ 
+}
 
 /* styles for the hobby section */
 #sport, #bass, #reading {
@@ -73,7 +91,7 @@ li {
     height: 250px;
     padding:10px;
     align-items: center;
-    border-radius: 50%;
+   
     
 }
 
@@ -135,13 +153,19 @@ h4 {
   
     justify-content: center;
     
-
 }
 
-.container {
+.container-title {
   margin-top: 3em;
   padding-top: 5em; 
 }
+
+.container-content {
+  
+  padding-top: 1em; 
+}
+
+
 
 /*justify all text on the page*/
 .text {
@@ -162,7 +186,7 @@ h4 {
 
 
 
-
+/*
 @media (max-width: 500px) {
 .ninja {
    display: none;
@@ -179,16 +203,4 @@ h4 {
     font-size: 10em;
   }
 }
-
-
-/* media query */
-
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
-    }
-}
-
-
 
