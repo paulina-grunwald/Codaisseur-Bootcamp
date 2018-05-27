@@ -12,8 +12,7 @@ html {
 body {
   padding-top: 7em;
   padding-bottom: 10em;
- }           }
-        
+ }           
 
 /* NAVBAR STYLING */
 .navbar-toggle {
@@ -121,7 +120,7 @@ h4 {
 
 /*styling for contact section*/
 .contact {
-		padding: 10px;
+		padding: 0.5em;
 }
 
 /*styling for contact icons in contact section*/
@@ -146,12 +145,6 @@ h4 {
 	line-height: 10px; 
 }
 
-/*styles the images in the project section - rounded edges*/
-.img-responsive {
-  border-radius: 8px;
-}
-
-/*add additional padding for project card-blocks in project section*/
 .card-block {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -163,32 +156,33 @@ h4 {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-/*justify all text on the page*/
-.text {
-  text-align: justify;
-}
-
 
 /* ----------- MEDIA QUERY----------- */
 
 
 @media only screen and (max-width: 756px) {
+
+  body {
+  padding-top: 1em;
+  padding-bottom: 5em;
+ } 
+
   .quote {
-    font-size: 1.8em;
-    padding-top: 3em;
-    padding-bottom: 3em;
+    font-size: 1.2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
   }
   .container {
     margin: 0.5em;
   }
 
-  h1 {
+  .quote {
     font-size: 1.8em;
     font-style: bold;
 
   }
 
-  h2 {
+  .headline {
     font-size: 1.7em;
     padding-left: 0.3em;
   }
@@ -196,5 +190,11 @@ h4 {
   #work {
     width: 80%;
     height: auto;
+  }
+  
+  .footer {
+      font-size: 0.7em;
+      text-align: center;
+      padding: 0.5em;
   }
 }
