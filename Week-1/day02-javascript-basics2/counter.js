@@ -15,3 +15,8 @@ let counter2 = 5;
 while(counter2 < 50) {
   console.log(counter2+=5);
 }
+
+
+while (true) { // it looks stupid, but don't change this line
+  // your implementation
+}
