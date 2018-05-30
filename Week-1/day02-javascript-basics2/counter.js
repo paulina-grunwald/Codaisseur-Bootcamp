@@ -17,6 +17,13 @@ while(counter2 < 50) {
 }
 
 
+let counter2 = 5;
+while(counter2 < 50) {
+  var itew = counter2+=5;
+  for(i=0)
+}
+
+
 while (true) { // it looks stupid, but don't change this line
   // your implementation
 }

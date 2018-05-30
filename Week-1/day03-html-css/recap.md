@@ -94,6 +94,6 @@ Git is used for the version control.
 
 14) What is the difference between `git add`,`git commit` and `git push` ?
 
-git add adds commits to the list of the items to be commited. git commit commits the changes to the master. git push pushes changes to the master.
+git add adds commits to the list of the items to be tracked files. git commit commits the changes to the master. git push pushes changes to the master.
 
 ### Clone this repository and add a file with the answers to these questions to the directory of your class. Name it 'AnswersFromYourName.md' Make sure to add a pull request and make some class mates review it!
