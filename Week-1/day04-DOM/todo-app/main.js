@@ -1,8 +1,17 @@
 
+function counter() {
+    var toDoItems = document.getElementsByClassName("todo").length;
+    var totalCount = document.getElementById("total-count");
+    totalCount.innerHTML = toDoItems;
+
+}
+
+
 function addToList() {
     var userInput = document.getElementById("new-todo");
     var newTodoName = userInput.value;
     createToDo(newTodoName);
+    counter()
   
 
 }
