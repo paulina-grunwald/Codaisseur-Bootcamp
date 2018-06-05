@@ -1,25 +1,30 @@
 // At the question marks, fill in one of the options: transform, select, reduce, map, or filter
 
-const route1 = [2.1, 3.5, 0.3, 5.2] // a route of different stretches in kilometers
+const route = [2.1, 3.5, 0.3, 5.2] // a route of different stretches in kilometers
 
-const distance1 = route1[0]               // select
-const distance1InMiles = distance1 / 1.6  // transform
+const distance = route[0]               // select
+const distance1InMiles = distance / 1.6  // transform
 
 // what does this function do? ...
 function kilometerToMile(km) {
   return km / 1.6
 }
 
-// what does this function do? ...
-function total(route) {
+///// Calculate total distance /////
+
+/*function total(route) {
   let res = 0
   for (let i = 0; i < route.length; i++) { // iterate
-    res += route[i]                      // filter, select
+    res += route[i]                      // map
   }
   return res
 }
+*/
+let total = route.reduce((distance,total) => (distance+total))
+console.log(total)
 
-// what does this function do? ...
+// Convert to miles
+/*
 function routeInMiles(route) {
   const res = []
   for (let i = 0; i < route.length; i++) { // iterate
@@ -28,6 +33,10 @@ function routeInMiles(route) {
   }
   return res
 }
+*/
+
+let miles = route.map((kilometerToMile(distance))
+
 
 // what does this function do? ...
 function longStretches(route) {
