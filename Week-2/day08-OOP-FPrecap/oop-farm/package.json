@@ -1,0 +1,12 @@
+{
+  "name": "oop-farm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "jest": "^23.1.0"
+  }
+}
