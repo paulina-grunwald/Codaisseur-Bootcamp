@@ -9,7 +9,7 @@ request.open("GET", "https://swapi.co/api/people/1/")
 request.send()
 
 
-fetch("https://swapi.co/api/people/2/")
+fetch("https://swapi.co/api/people/3/")
   .then(response => response.json())
   .then(myJson => {
     document.body.innerHTML =

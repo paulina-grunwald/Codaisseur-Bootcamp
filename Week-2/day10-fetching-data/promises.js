@@ -8,7 +8,6 @@ const documents = {
     2: {name: "Dave"}
  }
  
- 
  const getDocument = (documentId) => {
   return new Promise((resolve, reject) => {
     function loadComplete(document) {
