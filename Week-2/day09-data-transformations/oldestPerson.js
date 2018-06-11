@@ -9,19 +9,24 @@ const people = [
     {name: 'Hermien', age: 28}
 ]
 
-let oldestSoFar = people.sort((a,b) => (a.age > b.age ? 1 : -1))[people.length-1]
-
-console.log(oldestSoFar)
-
-
-function minMax(items) {
-    var minMaxArray = items.reduce(function (r, n) {
-            r[0] = (!r[0])? n : Math.min(r[0], n);
-            r[1] = (!r[1])? n : Math.max(r[1], n);
-            return r;
-        }, []);
-
-    return minMaxArray;
+function oldestPerson(set) {
+    return set.sort((a,b) => (a.age > b.age ? 1 : -1))[set.length-1]
 }
 
-console.log(minMax([4, 1, 2, 7, 6]));
+console.log(oldestPerson(people))
+
+
+module.exports = oldestPerson;
+
+
+// function minMax(items) {
+//     var minMaxArray = items.reduce(function (r, n) {
+//             r[0] = (!r[0])? n : Math.min(r[0], n);
+//             r[1] = (!r[1])? n : Math.max(r[1], n);
+//             return r;
+//         }, []);
+
+//     return minMaxArray;
+// }
+
+// console.log(minMax([4, 1, 2, 7, 6]));

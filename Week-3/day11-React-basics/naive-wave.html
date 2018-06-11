@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Do The Wave!</title>
+
+  <style>
+    #waves {
+      display: flex;
+    }
+    .red-wave {
+      height: 500px;
+      width: 1px;
+      background-color: red;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div id="waves"></div>
+  </main>
+
+  <script>
+    const container = document.getElementById('waves')
+    const total = 500
+    const range = Array.from(Array(total).keys())
+
+    function redraw(n) {
+      container.innerHTML = ''
+
+      range.forEach(i => {
+        const element = document.createElement('div')
+        element.className = 'red-wave'
+
+        const x = n === i ? 40 : 0
+
+        element.style.top = x + 'px'
+        element.style.left = i + 'px'
+
+        container.append(element)
+      })
+      setTimeout(redraw, 100, n > total ? 0 : n + 1)
+    }
+
+    redraw(1)
+  </script>
+</body>
+</html>
