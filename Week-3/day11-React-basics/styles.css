@@ -1,0 +1,23 @@
+#h { 
+    color: blue;
+    font-size: 2em;
+}
+#m {
+    color: orange;
+    font-size: 2em;
+}
+
+#s {
+    color: red;
+    font-size: 2em;
+}
+
+#dots {
+    font-size: 2em;
+    color: black;
+
+}
+
+.container {
+    padding: 5em
+}
