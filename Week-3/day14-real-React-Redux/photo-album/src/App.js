@@ -4,6 +4,7 @@ import './App.css';
 import store from './store'
 import {Provider} from 'react-redux'
 import AlbumsListContainer from './components/AlbumsListContainer'
+
 class App extends Component {
   render() {
     return (
