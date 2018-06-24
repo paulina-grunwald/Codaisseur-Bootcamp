@@ -16,3 +16,10 @@ const itWorksWithArray = (quizData, output) => {}
 console.log('It works for 16 and 20', itWorksforSixteenAndTwenty())
 console.log('It works for an array', itWorksWithArray(quizScore, output))
 */
+
+
+
+route = [4,6,5]
+function total(route){
+    route/fp
+}
