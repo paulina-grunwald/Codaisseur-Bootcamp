@@ -1,0 +1,10 @@
+.scoreboard ul {
+    width: 500px;
+    margin: 30px auto;
+    padding: 0;
+    box-shadow: 1px 1px 5px rgba(0,0,0, 0.2);
+  }
+  
+  .scoreboard h1 {
+    text-align: center;
+  }
