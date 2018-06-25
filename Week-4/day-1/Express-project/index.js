@@ -48,5 +48,5 @@ app.get('/houses/:id', (request, response) => {
 
 app.get('/houses', (request, response) => {
   const houses = Object.keys(housesList).map(item => item);
-  response.send(houses);
+  response.send({houses});
 });
