@@ -1,3 +1,5 @@
-export default (state = [], action = {}) => {
-  return state;
-};
+
+import products from './products'
+export default {
+  products
+}

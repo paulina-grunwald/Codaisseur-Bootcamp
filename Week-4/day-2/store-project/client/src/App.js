@@ -1,41 +1,19 @@
 import React, { Component } from 'react';
+import ProductDetails from './components/ProductDetails'
+import ProductsList from './components/ProductsList'
 import './App.css';
-import ProductsList from './components/ProductsList';
-import ProductDetails from './components/ProductDetails';
-import PropTypes from 'prop-types';
-
-const products = [
-  {
-    id: 1,
-    name: 'Handbag',
-    price: 1450
-  },
-  {
-    id: 5,
-    name: 'Heater',
-    price: 550
-  }
-];
-
+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom'
 class App extends Component {
-  static propTypes = {
-    products: PropTypes.arrayOf(
-      PropTypes.shape({
-        id: PropTypes.number.isRequired,
-        name: PropTypes.string.isRequired,
-        price: PropTypes.number.isRequired
-      })
-    ).isRequired
-  };
-
   render() {
     return (
-      <div>
-        <ProductsList products={products} />
-        <ProductDetails product={products[0]} />
-      </div>
-    );
+      <Router>
+        <div>
+          <Route exact path="/products" component={ProductsList} />
+          <Route exact path="/products/:id" component={ProductDetails} />
+          <Route exact path="/" render={ () => <Redirect to="/products" /> } />
+        </div>
+      </Router>
+    )
   }
 }
-
-export default App;
+export default App
